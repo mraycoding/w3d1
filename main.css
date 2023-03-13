@@ -24,45 +24,61 @@
     background-color: rgb(100, 83, 50);
 }
 
-#budgetcontainer {
-    border: 4px solid forestgreen;
-    width: 200px;
-    height: auto;
-    display: inline-block;
-    float: left;
-    padding: 5px;
-    margin: 5px;
+ul#flex-container {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
 }
 
-#dashboardcontainer {
+ul li {
+    height: 150px;
+    padding-top: 45px;
+    color: blue;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+ul li:First-child {
+    background:rgb(100, 83, 50)
+}
+ul li:nth-child(2) {
+    background: red;
+}
+
+ul li:nth-child(3) {
+    background: blueviolet;
+}
+ul li:last-child {
+    background: greenyellow;
+}
+
+
+ul li #dashboardcontainer {
     border: 4px solid forestgreen;
     width: 200px;
     height: auto;
     display: inline-block;
-    float: left;
-    padding: 5px;
-    margin: 5px;
 }
+
 
 #checkbookscontainer {
     border: 4px solid forestgreen;
     width: 200px;
     height: auto;
     display: inline-block;
-    float: left;
-    padding: 5px;
-    margin: 5px;
 }
+
 
 #moneycontainer {
     border: 4px solid forestgreen;
     width: 200px;
     height: auto;
     display: inline-block;
-    float: left;
-    padding: 5px;
-    margin: 5px;
 }
+
 
 #moreInfo {
     padding: 10px;
@@ -72,12 +88,27 @@
     color:azure;
     width: 175px;
     display:inline-block;
-    float: left;
     height: 25px;
     text-align: center;
     font-size: 12px;
-    bottom: 50px
+    bottom: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
+
+
 }
+
+
+
+
+
+#budgetcontainer {
+    border: 4px solid forestgreen;
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    justify-content: flex-start;
+}
+
+
